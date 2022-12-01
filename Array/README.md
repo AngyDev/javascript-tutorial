@@ -9,3 +9,4 @@
 | CONCAT  | Adds the element to the end                 | (), (value), (value1,..., valueN)     | The new length                                                              | :x:                |
 | SPLICE  | Adds/Removes the element from start to end  | (start, deleteCount, item1,...,itemN) | The array with the new elements or the array with only the removed elements | :white_check_mark: |
 | SLICE   | Makes a shallow copy of a portion of  array | (), (start, end)                      | The selected part of the array                                              | :x:                |
+| FILL    | Changes all elements in the array           | (value, start, end)                   | The array with the new elements                                             | :white_check_mark: |
