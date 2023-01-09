@@ -11,7 +11,7 @@
 
 const array = [1, 2, 3, 4];
 
-console.log("inialArray:", array);
+console.log("initialArray:", array);
 
 const found = array.findLast((element) => element > 2);
 
