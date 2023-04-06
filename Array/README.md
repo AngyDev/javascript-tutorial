@@ -10,3 +10,4 @@
 | SPLICE  | Adds/Removes the element from start to end  | (start, deleteCount, item1,...,itemN) | The array with the new elements or the array with only the removed elements | :white_check_mark: |
 | SLICE   | Makes a shallow copy of a portion of  array | (), (start, end)                      | The selected part of the array                                              | :x:                |
 | FILL    | Changes all elements in the array           | (value, start, end)                   | The array with the new elements                                             | :white_check_mark: |
+| SORT    | Sorts all elements in the array           | (), (compareFn)                   | The array with the sorted elements                                             | :white_check_mark: |
