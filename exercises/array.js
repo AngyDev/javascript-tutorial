@@ -59,15 +59,44 @@ console.log(first([7, 9, 0, -2], 6));
 console.log(first([7, 9, 0, -2], -3));
 
 /**
- * Write a JavaScript function to get the last element of an array. 
+ * Write a JavaScript function to get the last element of an array.
  * Passing a parameter 'n' will return the last 'n' elements of the array.
  */
 
 const last = (array, number) => {
-  return number ? array.slice(Math.max(array.length - number, 0)) : array[array.length - 1];
-}
+  return number
+    ? array.slice(Math.max(array.length - number, 0))
+    : array[array.length - 1];
+};
 
 console.log("---- last ----");
 console.log(last([7, 9, 0, -2]));
-console.log(last([7, 9, 0, -2],3));
-console.log(last([7, 9, 0, -2],6));
+console.log(last([7, 9, 0, -2], 3));
+console.log(last([7, 9, 0, -2], 6));
+
+/**
+ * Write a simple JavaScript program to join all elements of the following array into a string
+ */
+
+const myColor = ["Red", "Green", "White", "Black"];
+
+const fromArrayToString = (array, separator) => {
+  return array.join(separator);
+};
+
+console.log("---- fromArrayToString ----");
+console.log(fromArrayToString(myColor, ","));
+console.log(fromArrayToString(myColor, "+"));
+
+/**
+ * Write a JavaScript program to sort the items of an array
+ */
+
+const array = [-3, 8, 7, 6, 5, -4, 3, 2, 1];
+
+const sortArray = (array) => {
+  return array.sort((a, b) => a - b);
+};
+
+console.log("---- sortArray ----");
+console.log(sortArray(array));
