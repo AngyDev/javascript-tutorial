@@ -100,3 +100,22 @@ const sortArray = (array) => {
 
 console.log("---- sortArray ----");
 console.log(sortArray(array));
+
+/**
+ * Write a JavaScript program which accept a number as input and insert dashes (-)
+ * between each two even numbers. For example if you accept 025468 the output should be 254-6-8
+ */
+
+const evenSeparator = (numbers) => {
+  numbers = numbers.toString().split("");
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0 && numbers[i + 1] % 2 === 0) {
+      numbers.splice(i + 1, 0, "-");
+    }
+  }
+
+  return numbers.join("");
+};
+
+console.log("---- evenSeparator ----");
+console.log(evenSeparator(25468));
